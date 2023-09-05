@@ -18,7 +18,7 @@ def get_key(path, index):
 
 KEY_PATH = "credentials.json"
 LAT_1 = 40.6655101
-LON_1 = -73.89188969999998
+LON_1 = -76
 LAT_2 = 40.6905615
 LON_2 = -73.9976592
 
@@ -31,4 +31,4 @@ try:
     print(
         f"Road distance between {LAT_1}, {LON_1} and {LAT_2}, {LON_2}: {data['rows'][0]['elements'][0]['distance']['text'].replace(' mi', '')} miles")
 except:
-    print("Request failed")
+    print("No route found")
